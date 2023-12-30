@@ -1,0 +1,137 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/* :root { */
+/* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+} */
+
+.main-container {
+	background: #282828;
+	min-height: 100vh;
+	min-width: 100%;
+	text-align: center;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.main-container h1 {
+	font-size: 2rem;
+	color: #fffefe;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+}
+
+.add-new-task {
+	display: flex;
+	min-width: 400px;
+	background: #505050;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.add-new-task form {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+}
+
+form input {
+	padding: 0.5rem 0.8rem;
+	width: 80%;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background: transparent;
+}
+
+form button {
+	padding: 0.5rem 1.5rem;
+	color: #fff;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	background: #05b20d !important;
+}
+
+.all-task-area {
+	max-width: 400px;
+	min-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+  overflow: hidden;
+  height: auto;
+  gap: 0.9rem;
+  text-align: left;
+}
+.each-task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border: 1px solid #505050;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.all-task-area h1 {
+	font-size: 15px;
+  max-width: 90%;
+  min-width: 90%;
+  height: auto;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
+  overflow-x: hidden;
+  color: #616161;
+}
+
+
+
+.icon{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #616161;
+  transition: 0.6s;
+  
+}
+
+.icon:hover{
+  color:#fff;
+}
